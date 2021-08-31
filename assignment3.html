@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation</title>
+        <style>
+            .first{
+                height:50px;
+                width:100%;
+                background-color: gray;
+                color:white;
+            }
+
+            .second{
+                display:inline-block;
+                height:50px;
+                width:100px;
+                margin-left:40px;
+                text-align: center;
+                line-height: 50px;
+                vertical-align: top;
+               /* background-color: green;*/
+
+            }
+            .third{
+                width:500px;
+                height:50px;
+                margin-left:40px;
+                /*background-color: green;*/
+                display: inline-block;
+            }
+
+            .fourth>li{
+                list-style-type:none;
+                display: inline-block;
+                margin-left: 40px;
+                width:60px;
+                
+                vertical-align: top;
+                text-align: center;
+                
+               
+            }
+
+            .fifth>li{
+                list-style-type:none;
+                display:inline-block;
+                height:50px;
+                width:100%;
+                margin-left: 1px;
+                line-height: 50px;;
+                
+                text-align:center;
+                
+
+            }
+            
+
+
+            .fifth{
+                height:0px;
+                overflow:hidden;
+            }
+            .fun:hover{
+                background-color: green;
+                color:white;
+            }
+            .fun:hover >.fifth{
+                height:150px;
+            }
+
+            .six>li{
+                list-style-type:none;
+                display:inline-block;
+                height:50px;
+                width:100%;
+                margin-left: 1px;
+                line-height: 50px;;
+                
+
+            }
+            .six{
+                height:0px;
+                overflow:hidden;
+
+            }
+            .gun:hover{
+                background-color: chocolate;
+                color:black;
+            }
+
+            .gun:hover > .six{
+                height:150px;
+            }
+            
+          
+
+        </style>
+    </head>
+
+    <body>
+        <div class="first">
+            <div class="second">
+                FLIPKART
+            </div>
+
+            <div class="third">
+                <ul class="fourth">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li class="gun">Contact
+                        <ul class="six">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                    </li>
+                    <li class="fun">Product
+                        <ul class="fifth">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+
+                    </li>
+                </ul>
+
+            </div>
+
+            
+        </div>
+    </body>
+</html>
