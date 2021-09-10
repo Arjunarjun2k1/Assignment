@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Manipulation</title>
+        <style>
+            *{
+                margin:0px;
+                padding: 0px;
+            }
+
+            .container{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                
+                
+            }
+
+            input{
+                width:400px;
+                border:2px solid gray;
+                border-radius: 20px;
+                outline:none;
+                padding:10px;
+                margin-top: 25px;
+                text-indent: 10px;
+            }
+
+            button{
+                width:200px;
+                border-radius: 20px;
+                padding:10px;
+                border:2px solid black;
+                outline: none;
+                box-shadow: 0 0 5px gray ;
+                margin-top: 25px;
+                margin-bottom: 25px;
+
+            }
+            .list{
+                
+                
+                padding: 10px;
+                background-color: transparent;
+                border:3px solid gray;
+            }
+
+            .todo{
+                border:2px solid gray;
+                color:blue;
+                border-radius: 15px;
+                padding: 10px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <input id="input" type="text" placeholder="Task....."/>
+
+            <button onclick="todolist()">ADD TO LIST</button>
+
+            <div class="list" id="list"></div>
+
+        </div>
+
+
+
+    <script>
+        function todolist()
+        {
+        document.getElementById('input').value;
+        data=document.getElementById('input').value;
+        document.getElementById('list').innerHTML+=`<h1 class=todo>${data}</h1>`;
+        document.getElementById('input').value="";
+       }
+
+    </script>    
+    </body>
+</html>
