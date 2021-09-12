@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Navigation Bar</title>
+        <style>
+            *{
+                margin:0px;
+                padding:0px;
+            }
+        .header{
+            width:100%;
+            
+            background-color: grey;
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .container{
+            width:80%;
+            height:60px;
+            
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-between ;
+            
+
+        }
+        .logo{
+            width:15%;
+            background-color: chartreuse;
+            text-align: center;
+            height: 60px;
+            line-height: 60px;
+            
+        }
+        
+        .navigation{
+            width:40%;
+            background-color: hotpink;
+            
+        }
+        ul{
+            display:flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+        }
+        li{
+            width: 25%;
+            height:60px;
+            line-height:60px;
+            text-align: center;
+            background-color: lawngreen;
+        }
+        li:hover{
+            background-color: black;
+            color: blanchedalmond;
+        }
+        @media (max-width:550px){
+            .container{
+                width:100%;
+            }
+            .logo{
+                width:100%;
+                background-color: red;
+            }
+            .navigation{
+                width: 100%;
+            }
+            li{
+                width: 100%;
+            }
+
+        }
+
+        
+        
+        </style>
+           
+    </head>
+    <body>
+       <header class="header">
+        <div class="container">
+            <div class="logo">
+                Amazon
+            </div>
+            
+                <nav class="navigation">
+                    <ul>
+                        <li>Home</li>
+                        <li class="aaa">About</li>
+                        <li>Contact</li>
+                        <li>Product</li>
+                    </ul>
+                </nav>
+
+            
+
+        </div>
+       </header>
+    </body>
+</html>
