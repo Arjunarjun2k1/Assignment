@@ -1,0 +1,282 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-navigation{
+    width:100%;
+    height:60px;
+    background-color:black;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navigation-container{
+    height:60px;
+    width:80%;
+    /*background-color: blue;*/
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo{
+    width:15%;
+    height:60px;
+    color:white;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    /* background-color: yellow;*/
+}
+
+.navigation{
+    width:40%;
+    /*background-color: yellow;*/
+}
+
+.nav-ul{
+    display:flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.nav-li{
+    height:60px;
+    width:25%;
+    /*background-color: green;*/
+    text-align: center;
+    line-height: 60px;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.nav-li:hover{
+    background-color: white;
+    color:black;
+}
+
+/*-----Banner Section------*/
+.banner{
+    height:80vh;
+    width: 100%;
+    background-image:url("./images/banner.jpeg");
+   background-size: cover;
+   background-position: center;
+   display:flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.banner-description{
+    height:40%;
+    width:30%;
+    background-color:rgb(0,0,0,.3);
+    margin-left: 10px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.banner-btn{
+    background-color:rgba(0,0,0,0.7);
+    color: white;
+    width:100px;
+    height: 50px;
+    margin-left: 150px;
+    border: none;
+}
+
+.banner-header{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.banner-para{
+    text-align: justify;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/*----Product Section---*/
+.product-section{
+    display: flex;
+   justify-content: center;
+}
+
+.product-container{
+    width:85%;
+   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-content: space-between;
+}
+
+.product-1{
+    width:23%;
+    height:450px;
+    
+}
+.product-2{
+    width:23%;
+    height:450px;
+    
+}
+.product-3{
+    width:23%;
+    height:450px;
+    
+}
+.product-4{
+    width:23%;
+    height:450px;
+}
+    
+.product-5{
+    width:23%;
+    height:450px;
+    margin-top: 15px;
+}
+.product-6{
+    width:23%;
+    height:450px;
+    margin-top: 15px;
+}
+.product-7{
+    width:23%;
+    height:450px;
+    margin-top: 15px;
+}
+.product-8{
+    width:23%;
+    height:450px;
+    margin-top: 15px;
+}
+
+.product-image1{
+    width:100%;
+    height:300px;
+    background-image: url("images/product8.jpeg");
+    background-size: cover;
+    background-color: green;
+}
+.product-image2{
+    width:100%;
+    height:300px;
+    background-image: url("images/product2.jpeg");
+    background-size: cover;
+    background-color: green;
+}
+.product-image3{
+    width:100%;
+    height:300px;
+    background-image: url("images/product3.jpeg");
+    background-size: cover;
+    background-color: green;
+    background-position: center;
+}
+.product-image4{
+    width:100%;
+    height:300px;
+    background-image: url("images/product4.jpeg");
+    background-size: cover;
+    background-color: green;
+}
+.product-image5{
+    width:100%;
+    height:300px;
+    background-image: url("images/product5.jpeg");
+    background-size: cover;
+    background-color: green;
+    background-position:center;
+}
+.product-image6{
+    width:100%;
+    height:300px;
+    background-image: url("images/product6.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-color: green;
+}
+.product-image7{
+    width:100%;
+    height:300px;
+    background-image: url("images/product7.jpeg");
+    background-size: cover;
+    background-color: green;
+}
+.product-image8{
+    width:100%;
+    height:300px;
+    background-image: url("images/product1.jpeg");
+    background-size: cover;
+    background-color: green;
+}
+
+.add{
+    padding:10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    
+}
+
+.product-description1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.dec{
+    margin-top: 20px;
+}
+
+/*---Footer---*/
+
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+.copy{
+    color: white;
+}
+
+/*----------------------Responsive Css---------------------*/
+@media (max-width:550px){
+    .header-navigation{
+        width: 100%;
+    }
+    .navigation-container{
+        width:100%;
+    }
+    .logo{
+        width:100%;
+     
+    }
+    .navigation{
+        width: 100%;
+    }
+    li{
+        width: 100%;
+    }
+    .banner-description{
+        display:none;
+    }
+
+}
